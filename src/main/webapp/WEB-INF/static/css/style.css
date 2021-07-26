@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+html, body{height: 100%; overflow: hidden;}
+li{list-style: none;}
+a{text-decoration: none; color: black;}
+input{border-style: none; background-color: white; cursor: pointer; border-bottom: 1px lightgray solid;}
+
+
+.wrapper{display: flex; height: 100%;}
+
+/* Aisde */
+.listBox{width: 250px; min-width: 150px; max-width: 250px; border-right: 1px lightgray solid;  overflow-y: auto;}
+.listBox::-webkit-scrollbar{display: none;}
+.list{display: block; height: 95px; border-bottom: 1px lightgray solid; padding-top: 10px;}
+.list:hover{background-color: lightgray; transition-duration: 0.5s;}
+.title{padding-left: 10px; font-size: 20px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.sub{font-size: 12px; padding-left: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+/* Nav */
+.main{width: 100%;}
+nav{border-bottom: 1px lightgray solid; text-align: right; height: 30px;}
+.add{display: inline-block; margin-right: 10px; height: 19px; vertical-align: middle;}
+.add:hover{background-color: lightgray; transition-duration: 0.5s;}
+
+section{width: 100%; height: 100%;}
+.sectionName{text-align: center; font-size: 60px; margin-top: 20px;}
+form{height: 100%; text-align: center; margin-top: 20px;}
+
+/* Main Section */
+.mainPage{position: relative; width: 100%; height: 100%;}
+.mainBox{position: absolute; left: 42%; top: 20%;}
+.mainTitle{font-size: 200px;}
+.mainSub{font-size: 60px;}
+
+/* Read Section */
+.readPage{height: 100%;}
+.buttonBox{width: 80%; display: inline-block; text-align: end;}
+.inputTitle{width: 80%; height: 60px; cursor: text; font-weight: 700; font-size: 30px; padding: 5px 5px; margin-top: 10px; outline: unset; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px lightgray solid;}
+.content{width: 80%; max-width: 80%; min-width: 80%; height: 60%; max-height: 60%; min-height: 60%; padding: 5px 5px; margin-top: 10px !important; font-size: 15px; border: 1px lightgray solid;}
+.delete{margin-left: 5px;}
+.update:hover{background-color: lightgray; transition-duration: 0.5s;}
+.delete:hover{background-color: lightgray; transition-duration: 0.5s;}
+.inputTitle, .content:focus{outline: none;}
